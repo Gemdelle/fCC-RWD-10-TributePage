@@ -21,7 +21,7 @@ body {
     text-shadow: 4px 4px 7px rgba(0,0,0,0.6);
 }
 
-#image-caption {
+#img-caption {
     position: absolute;
     top: 73%;
     left: 20%;
@@ -62,6 +62,24 @@ body {
     border: 10px double gray;
 }
 
+#disks {
+    position: absolute;
+    z-index: 2;
+    top: 620px;
+    right: 900px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#disks li {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 9px rgba(137, 36, 36, 0.7), 7px 7px 4px rgba(0,0,0,0.6);
+    color: rgb(50, 12, 12);
+}
+
 #tribute-info {
     background-color: rgb(75, 78, 78);
     border-radius: 10px;
@@ -97,6 +115,7 @@ ol  {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
     padding-bottom: 0;
 }
 
@@ -145,7 +164,7 @@ a {
 #letter {
     z-index: 2;
     position: absolute;
-    left: 220px;
+    left: 305px;
     height: 140px;
     filter: saturate(70%);
 }
