@@ -1,6 +1,6 @@
 body {
     max-width: 1000px;
-    height: 1700px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -13,9 +13,8 @@ body {
 }
 
 #title {
-    font-size: 50px;
-    top: 60%;
-    left: 20%;
+    font-size: 3vw;
+    left: 23%;
     position: absolute;
     z-index: 1;
     text-shadow: 4px 4px 7px rgba(0,0,0,0.6);
@@ -31,6 +30,7 @@ body {
     font-weight: normal;
     margin: 3%;
     text-align: center;
+    font-size: 1vw;
 }
 
 #img-div {
@@ -46,6 +46,7 @@ body {
     height: auto;
     filter: sepia(100%) blur(10px);
     border-radius: 15px;
+    position: relative;
 }
 
 .blur {
@@ -53,9 +54,9 @@ body {
     background-position: 0% 80%;
     background-size: cover;
     position: absolute;
-    top: 590px;
+    top: 31vw;
     height: 50%;
-    width: 67%;
+    width: 62%;
     z-index: 1;
     filter: sepia(60%);
     border-radius: 15px;
@@ -65,12 +66,14 @@ body {
 #disks {
     position: absolute;
     z-index: 2;
-    top: 620px;
-    right: 900px;
-    font-size: 20px;
+    top: 33vw;
+    left: 23vw;
+    font-size: 1.3vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
+    margin: 0;
 }
 
 #disks li {
@@ -81,35 +84,37 @@ body {
 }
 
 #tribute-info {
-    background-color: rgb(75, 78, 78);
+    background-color: rgb(94, 98, 98);
     border-radius: 10px;
     border: 5px solid rgb(208, 179, 149);
-    height: 28%;
+    height: 26%;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     padding-top: 15px;
     align-items: center;
+    margin-bottom: 2vw;
 }
 
 #life-cycle {
-    font-size: 35px;
+    font-size: 1.5vw;
     font-weight: 600;
     color: rgb(82, 32, 32);
-    margin: 0;
+    margin: 1.5vw 0;
+    margin-bottom: 0;
     text-shadow: 5px 5px 10px rgb(240, 240, 240);
 }
 
 #description {
     color: rgb(255, 255, 255);
-    font-size: normal;
-    padding: 0px 50px;
+    font-size: 0.8vw;
+    padding: 0 3vw;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-    margin-left: 90px;
-    margin-top: 60px;
+    margin-left: 3vw;
+    margin-top: 1vw;
 }
 
 ol  {
-    padding: 20px;
     font-size: small;
     font-weight: bold;
     display: flex;
@@ -117,6 +122,7 @@ ol  {
     align-items: center;
     margin-bottom: 0;
     padding-bottom: 0;
+    width: 100%;
 }
 
 hr {
@@ -124,24 +130,34 @@ hr {
     margin: 20px 0px;
 }
 
+#first, 
+#second,
+#third,
+#fourth {
+    font-size: 0.8vw;
+}
+
 #first {
-    color: gray;
+    color: rgb(148, 148, 148);
     text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+    width: 16%;
 }
 
 #second {
-    color: rgb(146, 99, 99);
-    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+    color: rgb(84, 40, 40);
+    width: 16%;
 }
 
 #third {
     color:rgb(50, 28, 28);
     text-shadow: 0px 0px 6px rgba(140, 140, 140, 0.6);
+    width: 16%;
 }
 
 #fourth {
-    color:rgb(65, 45, 45);
+    color:rgb(67, 42, 42);
     text-shadow: 0px 0px 6px rgba(140, 140, 140, 0.6);
+    width: 16%;
 }
 
 a:hover {
@@ -158,13 +174,14 @@ a {
 
 #link {
     margin-left: 0px;
-    font-size: 12px;
+    margin-top: 2vw;
+    font-size: 0.7vw;
 }
 
 #letter {
     z-index: 2;
     position: absolute;
-    left: 305px;
+    left: 20vw;
     height: 140px;
     filter: saturate(70%);
 }
